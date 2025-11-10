@@ -1,0 +1,33 @@
+Project Title: AI-Powered Food Ordering Assistant using CrewAI and Streamlit
+
+Description:
+This project demonstrates an intelligent food ordering system built using CrewAI and Streamlit. The application simulates a restaurant’s digital assistant that can read menu data, understand natural-language user orders, validate item availability, and generate polite, conversational billing summaries—all autonomously powered by CrewAI agents.
+
+The system leverages multiple specialized AI agents working together:
+1. **Menu Reader Agent** – Reads an Excel-based menu and structures it into dictionaries with item names, prices, and availability.
+2. **Order Parser Agent** – Parses free-text user input (e.g., “2 pizzas and 1 coke”) into structured order data.
+3. **Billing Agent** – Validates item availability using the parsed order and computes the total bill using a dedicated CrewAI tool.
+
+These agents collaborate in a three-step CrewAI pipeline orchestrated by the Crew framework:
+- Task 1: Read and structure menu data.
+- Task 2: Parse and interpret user order text.
+- Task 3: Check availability and compute total cost with natural conversational responses.
+
+The user interface is built using **Streamlit**, offering a simple and interactive front-end where users can input their orders and view real-time AI-generated responses.
+
+Key Features:
+- Excel-based menu ingestion
+- AI-driven natural language order understanding
+- Automatic availability check and bill computation
+- CrewAI-based multi-agent coordination
+- Streamlit-powered intuitive UI
+
+Tech Stack:
+- Python
+- CrewAI
+- LangChain (OpenAI backend)
+- Streamlit
+- Pandas
+
+Outcome:
+This project serves as a scalable prototype for intelligent restaurant assistants that combine natural language understanding with structured data reasoning. It demonstrates how autonomous agents can collaboratively manage workflows such as menu reading, order parsing, and billing computation.
